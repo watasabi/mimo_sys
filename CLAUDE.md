@@ -1,0 +1,1 @@
+Leia @AGENT.md para as diretrizes deste projeto (stack, convenções de código, commits e regras importantes). As diretrizes valem para qualquer agente de IA trabalhando neste repositório, não só para o Claude Code.
