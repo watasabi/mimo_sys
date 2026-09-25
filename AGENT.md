@@ -37,6 +37,7 @@ ignore = ['E402', 'F811']
 - Docstrings for public APIs (Google style)
 - **Always use type hints.**
 - **Prefer simple, readable code over modularity.** This is a data science project: most code is exploratory or analytical, and read far more often than reused. A clear, linear script beats a premature abstraction — don't extract a function, class or registry entry unless it is already reused or the file has become hard to follow.
+- **Keep notebook markdown cells short.** One or two sentences per section, no restating what the code already shows. Long prose (methodology, literature context, multi-paragraph explanations) belongs in `docs/`, not inline in a notebook — link to it instead of repeating it.
 
 ## Commands
 
