@@ -19,7 +19,23 @@ O formato é baseado no [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.
   código do melhor modelo do artigo (MOCS) não está disponível nos
   dados brutos — ver `docs/changes/2026-09-25-reproduzir-mogwo.md`.
 
+- `src/mimo_sys/preprocessors/` com `TimeSeriesPreprocessor` (imputação,
+  remoção de outliers, decomposição EWT/detrend, filtro adaptativo,
+  differencing e normalização), reexportado a partir de
+  `notebooks/processing/02_preprocessing_ts.py`. Inclui
+  `inverse_transform` por lote de janelas, usando os índices de âncora
+  de cada janela para desfazer differencing/detrend corretamente
+  (em vez de assumir uma única sequência contínua), o que permite
+  avaliar previsões de modelo na escala original dos dados.
+
 ### Fixed
+- Pacote `mimo_sys` agora é instalável (`[build-system]`/`hatchling` em
+  `pyproject.toml`); antes o projeto era "virtual" no uv e
+  `from mimo_sys import ...` não funcionava.
+- `TimeSeriesPreprocessor` força uma cópia gravável do array após a
+  imputação, pois `pandas>=3.0` (Copy-on-Write) faz `DataFrame.values`
+  devolver arrays somente leitura, quebrando as atribuições in-place
+  do pipeline (differencing, detrend).
 - `armax_predict` agora trata as 3 primeiras predições como iguais ao
   medido, como o `fun_objetivo.m` do MATLAB. O custo das soluções do
   `MOGWO.mat` passa a bater com o `PARETO_FRONT` dos autores (~3e-15) e
