@@ -27,6 +27,17 @@ O formato é baseado no [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.
   de cada janela para desfazer differencing/detrend corretamente
   (em vez de assumir uma única sequência contínua), o que permite
   avaliar previsões de modelo na escala original dos dados.
+- Notebook `notebooks/training/01_seq2seq_attention.ipynb`: modelo
+  Seq2Seq (encoder-decoder LSTM) com dot-attention multivariado,
+  treinado com PyTorch Lightning + MLflow sobre os mesmos dados do
+  ARMAX/MOGWO (splits de 601/501 amostras do artigo), prevendo
+  `y1..y3` a partir de janelas de `u1..u4` + `y1..y3`. Pré-processamento
+  básico (só `MinMaxScaler`, sem `TimeSeriesPreprocessor`), com plots
+  de forecast (janela única e teste completo encadeado) e pesos de
+  attention iguais à referência — ver
+  `docs/changes/2026-09-28-seq2seq-attention-mimo.md`. Adicionado
+  grupo opcional `ml` (torch, lightning, torchmetrics, mlflow) em
+  `pyproject.toml`.
 
 ### Fixed
 - Pacote `mimo_sys` agora é instalável (`[build-system]`/`hatchling` em
