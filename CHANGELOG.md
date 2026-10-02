@@ -38,6 +38,18 @@ O formato é baseado no [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.
   `docs/changes/2026-09-28-seq2seq-attention-mimo.md`. Adicionado
   grupo opcional `ml` (torch, lightning, torchmetrics, mlflow) em
   `pyproject.toml`.
+- Notebook `notebooks/eda/02_split_vs_dataset_completo.ipynb`: compara
+  o recorte de 1.102 amostras usado no artigo com o dataset completo
+  (2.208 amostras) e mede o ARMAX/MOGWO (Tabela 3) fora da janela em
+  que foi ajustado — MSE, MAE, R² e SMAPE% por saída (R² cai de
+  ~0.94/0.95/0.85 para ~0.88/0.86/0.80) — ver
+  `docs/changes/2026-10-02-full-dataset-splits.md`.
+- Script `notebooks/processing/03_full_dataset_sample.py`: gera dois
+  esquemas de split sobre o dataset completo — `TimeSeriesSplit`
+  (5 folds) + holdout de teste fixo
+  (`mimo_full_kfold_{assignments,test}.parquet`), e split cronológico
+  simples treino/validação/teste 70/15/15
+  (`mimo_full_sample_{train,val,test}.parquet`).
 
 ### Fixed
 - Pacote `mimo_sys` agora é instalável (`[build-system]`/`hatchling` em
