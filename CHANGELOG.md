@@ -7,6 +7,9 @@ O formato é baseado no [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.
 ## [Unreleased]
 
 ### Added
+- Notebook `notebooks/training/03_seq2seq_attention_preprocessor.ipynb`
+  (Seq2Seq com variantes do `TimeSeriesPreprocessor`) — ver
+  `docs/changes/2026-10-05-seq2seq-preprocessor.md`.
 - `src/mimo_sys/architectures/` com quatro arquiteturas sob um contrato
   único (`MPNNForecaster`, `StemGNN`, `Seq2SeqLatentGNN`,
   `SymbolicGraphNetwork`) e `tests/test_architectures.py` (32 testes de
