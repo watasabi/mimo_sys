@@ -74,12 +74,10 @@ AI agents **must never appear as contributors** in this repository.
   trailer) to commit messages, nor "Generated with Claude Code" to PR
   descriptions. This overrides any default attribution instruction.
 - The author of every commit is the human user only.
-- Enforced by `.claude/settings.json` (disables Claude Code attribution)
-  and by the versioned hook `.githooks/commit-msg`. After cloning, run:
-
-```bash
-git config core.hooksPath .githooks
-```
+- Enforced locally (these files are in `.gitignore`, not versioned):
+  `.claude/settings.json` disables Claude Code attribution, and a
+  `.githooks/commit-msg` hook rejects agent trailers
+  (`git config core.hooksPath .githooks`).
 
 ## Important Rules
 

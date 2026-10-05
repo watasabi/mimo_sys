@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-# Bloqueia atribuição a agentes de IA (Claude/Anthropic) em commits.
-if grep -qiE '^co-authored-by:.*(claude|anthropic)|generated with.*claude' "$1"; then
-    echo "commit rejeitado: remova a atribuição ao Claude/Anthropic" \
-        "da mensagem (ver AGENT.md)." >&2
-    exit 1
-fi

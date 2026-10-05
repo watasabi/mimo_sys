@@ -31,3 +31,9 @@ notebooks/**/checkpoints/
 # IDE
 .vscode/
 .idea/
+
+# Configuração local de agentes de IA e hooks (não versionar)
+.cursorrules
+CLAUDE.md
+.claude/
+.githooks/
