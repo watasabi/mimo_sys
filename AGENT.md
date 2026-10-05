@@ -46,7 +46,7 @@ Use `uv` for all operations to ensure environment isolation:
 ```bash
 uv run ruff check src/ tests/           # Lint code
 uv run ruff format src/ tests/          # Format code
-uv run pytest tests/                    # Run tests
+uv run --extra ml pytest tests/         # Run tests (torch is in the `ml` extra)
 ```
 
 ## Commit Message Convention
