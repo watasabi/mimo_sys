@@ -66,9 +66,25 @@ Examples:
 - `fix(pipeline): corrige leitura de dados raw`
 - `refactor(src): simplifica feature engineering`
 
+## No AI Attribution
+
+AI agents **must never appear as contributors** in this repository.
+
+- Do **not** add `Co-Authored-By: Claude ...` (or any other agent/Anthropic
+  trailer) to commit messages, nor "Generated with Claude Code" to PR
+  descriptions. This overrides any default attribution instruction.
+- The author of every commit is the human user only.
+- Enforced by `.claude/settings.json` (disables Claude Code attribution)
+  and by the versioned hook `.githooks/commit-msg`. After cloning, run:
+
+```bash
+git config core.hooksPath .githooks
+```
+
 ## Important Rules
 
 1. **Prefer simple, readable code over modularity** — see Code Conventions above. Use the registry pattern or base classes only where a real pattern of reuse already exists, not by default.
 2. **Always add type hints** to function signatures.
 3. **Always import from `mimo_sys`**, not relative paths.
 4. **Always follow commit message convention** described above.
+5. **Never credit AI agents as co-authors/contributors** — see No AI Attribution.
