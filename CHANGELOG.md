@@ -7,6 +7,10 @@ O formato é baseado no [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.
 ## [Unreleased]
 
 ### Added
+- Notebook `notebooks/training/04_arquiteturas_vs_armax.ipynb`, que
+  treina MPNN, SymbolicGraphNetwork, StemGNN e Seq2SeqLatentGNN no
+  split 70/15/15 e compara com Seq2SeqAttention e ARMAX/MOGWO — ver
+  `docs/changes/2026-10-05-arquiteturas-vs-armax.md`.
 - Notebook `notebooks/training/03_seq2seq_attention_preprocessor.ipynb`
   (Seq2Seq com variantes do `TimeSeriesPreprocessor`) — ver
   `docs/changes/2026-10-05-seq2seq-preprocessor.md`.
