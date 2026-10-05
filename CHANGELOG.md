@@ -7,6 +7,28 @@ O formato é baseado no [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.
 ## [Unreleased]
 
 ### Added
+- `src/mimo_sys/architectures/` com quatro arquiteturas sob um contrato
+  único (`MPNNForecaster`, `StemGNN`, `Seq2SeqLatentGNN`,
+  `SymbolicGraphNetwork`) e `tests/test_architectures.py` (32 testes de
+  contrato) — ver `docs/changes/2026-10-05-architectures-gnn.md`.
+  `MPNNForecaster` é o veículo de extração: expõe `message_fn` e
+  `update_fn` isolados, `message_l1()` para o bottleneck de Cranmer,
+  `edge_strength()` para a topologia e `collect_message_io` /
+  `collect_update_io` para a destilação simbólica.
+  `src/mimo_sys/architectures/README.md` documenta cada arquitetura,
+  seus parâmetros e armadilhas.
+- `docs/4_rotas-de-extracao.md` — as duas rotas de extração (equação via
+  destilação simbólica, subgrafo via peso de aresta/explainer), o
+  critério que liga cada arquitetura a cada rota, e as receitas.
+- `docs/3_investigacao-arquiteturas.md` — triagem das arquiteturas candidatas
+  à extração de equações (StemGNN, FourierGNN, Autoformer, autoencoder GNN) e
+  das rotas de extração (bottleneck de mensagem vs. latente vs. subgrafo),
+  com a decisão de dois modelos: FourierGNN como referência de acurácia e
+  MPNN + SymTorch como veículo de extração.
+- 11 PDFs em `docs/pappers/` (SymTorch, FourierGNN, SINDy-Autoencoder, PySR,
+  Symbolic Graph Networks, GNNExplainer, PGExplainer, SubgraphX, Autoformer,
+  DLinear, TFT), com fichas de SymTorch, FourierGNN e Autoformer em
+  `docs/0_referencias-tcc.md`.
 - Notebook `notebooks/training/02_seq2seq_attention_splits_vs_armax.ipynb`,
   que treina o Seq2Seq nos splits 70/15/15 e k-fold do dataset completo
   e compara com o ARMAX/MOGWO — ver
