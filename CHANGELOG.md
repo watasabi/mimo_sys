@@ -7,6 +7,10 @@ O formato é baseado no [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.
 ## [Unreleased]
 
 ### Added
+- Notebook `notebooks/training/02_seq2seq_attention_splits_vs_armax.ipynb`,
+  que treina o Seq2Seq nos splits 70/15/15 e k-fold do dataset completo
+  e compara com o ARMAX/MOGWO — ver
+  `docs/changes/2026-10-05-seq2seq-splits-vs-armax.md`.
 - Setup inicial do projeto via template ds-template-v2.
 - Notebook de exploração dos dados de reservatório (`notebooks/eda/`).
 - Notebook `notebooks/processing/01_mimo_dataset_from_papper.ipynb` que
