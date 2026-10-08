@@ -7,6 +7,12 @@ O formato é baseado no [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.
 ## [Unreleased]
 
 ### Added
+- `src/mimo_sys/explainers/equation/` e `src/mimo_sys/explainers/graph/`,
+  operacionalizando as rotas A (destilação simbólica de `message_fn`/
+  `update_fn` via PySR) e B (`edge_strength_frame`, com `PGExplainerTopology`
+  como fallback opcional) de `docs/4_rotas-de-extracao.md` — ver
+  `docs/changes/2026-10-08-explainers-graph-equation.md`. Novos extras
+  opcionais: `symbolic` (`pysr`), `explain` (`torch-geometric`).
 - Notebook `notebooks/eda/03_eda_series_temporais.ipynb`, com EDA de série
   temporal (tendência/decomposição EWT vs. STL, ADF, ACF/PACF, Granger,
   cointegração Engle-Granger/Johansen, DTW + clustering hierárquico,
