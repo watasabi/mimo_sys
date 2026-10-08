@@ -7,6 +7,12 @@ O formato é baseado no [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.
 ## [Unreleased]
 
 ### Added
+- Notebook `notebooks/eda/03_eda_series_temporais.ipynb`, com EDA de série
+  temporal (tendência/decomposição EWT vs. STL, ADF, ACF/PACF, Granger,
+  cointegração Engle-Granger/Johansen, DTW + clustering hierárquico,
+  shapelets, domínio da frequência e identificação de sistemas via ARX) —
+  ver `docs/changes/2026-10-07-eda-series-temporais.md`. Novas dependências:
+  `statsmodels`, `dtaidistance`.
 - Notebook `notebooks/training/04_arquiteturas_vs_armax.ipynb`, que
   treina MPNN, SymbolicGraphNetwork, StemGNN e Seq2SeqLatentGNN no
   split 70/15/15 e compara com Seq2SeqAttention e ARMAX/MOGWO — ver
