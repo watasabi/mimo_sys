@@ -1,0 +1,152 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem[Battaglia et al. 2018]{battaglia2018}
+\abntrefinfo{Battaglia et al.}{BATTAGLIA et al.}{2018}
+{BATTAGLIA, P.~W.; HAMRICK, J.~B.; BAPST, V.; SANCHEZ-GONZALEZ, A.; ZAMBALDI,
+  V.; MALINOWSKI, M.; TACCHETTI, A.; RAPOSO, D.; SANTORO, A.; FAULKNER, R.;
+  GULCEHRE, C.; SONG, F.; BALLARD, A.; GILMER, J.; DAHL, G.; VASWANI, A.;
+  ALLEN, K.; NASH, C.; LANGSTON, V.; DYER, C.; HEESS, N.; WIERSTRA, D.; KOHLI,
+  P.; BOTVINICK, M.; VINYALS, O.; LI, Y.; PASCANU, R. \textbf{Relational
+  Inductive Biases, Deep Learning, and Graph Networks}. 2018.
+ArXiv preprint arXiv:1806.01261.}
+
+\bibitem[Bristol 1966]{bristol1966}
+\abntrefinfo{Bristol}{BRISTOL}{1966}
+{BRISTOL, E. On a new measure of interaction for multivariable process control.
+\textbf{IEEE Transactions on Automatic Control}, v.~11, n.~1, p. 133--134,
+  1966.}
+
+\bibitem[Cao et al. 2020]{cao2020}
+\abntrefinfo{Cao et al.}{CAO et al.}{2020}
+{CAO, D.; WANG, Y.; DUAN, J.; ZHANG, C.; ZHU, X.; HUANG, C.; TONG, Y.; XU, B.;
+  BAI, J.; TONG, J.; ZHANG, Q. \textbf{Spectral Temporal Graph Neural Network
+  for Multivariate Time-Series Forecasting}. 2020.
+ArXiv:2103.07719.}
+
+\bibitem[Chen et al. 2026]{chen2026}
+\abntrefinfo{Chen et al.}{CHEN et al.}{2026}
+{CHEN, X.; AN, J.; GUO, J.; ZHOU, Y. \textbf{Symbolic Graph Networks for Robust
+  PDE Discovery from Noisy Sparse Data}. 2026.
+ArXiv preprint arXiv:2603.22380.}
+
+\bibitem[Cranmer 2023]{cranmer2023}
+\abntrefinfo{Cranmer}{CRANMER}{2023}
+{CRANMER, M. \textbf{Interpretable Machine Learning for Science with PySR and
+  SymbolicRegression.jl}. 2023.
+ArXiv preprint arXiv:2305.01582.}
+
+\bibitem[Cranmer et al. 2020]{cranmer2020}
+\abntrefinfo{Cranmer et al.}{CRANMER et al.}{2020}
+{CRANMER, M.; SANCHEZ-GONZALEZ, A.; BATTAGLIA, P.; XU, R.; CRANMER, K.;
+  SPERGEL, D.; HO, S. Discovering symbolic models from deep learning with
+  inductive biases. In:  \textbf{Advances in Neural Information Processing
+  Systems (NeurIPS)}. [S.l.: s.n.], 2020. v.~33. ArXiv:2006.11287.}
+
+\bibitem[Faber, Moghaddam e Wattenhofer 2021]{faber2021}
+\abntrefinfo{Faber, Moghaddam e Wattenhofer}{FABER; MOGHADDAM;
+  WATTENHOFER}{2021}
+{FABER, L.; MOGHADDAM, A.~K.; WATTENHOFER, R. When comparing to ground truth is
+  wrong: On evaluating gnn explanation methods.
+2021.}
+
+\bibitem[Ferrari e Coelho 2025]{ferrari2025}
+\abntrefinfo{Ferrari e Coelho}{FERRARI; COELHO}{2025}
+{FERRARI, L.; COELHO, L. d.~S. Multi-objective metaheuristics applied for the
+  multivariable system identification.
+\textbf{International Journal of Parallel, Emergent and Distributed Systems},
+  2025.
+DOI: 10.1080/17445760.2025.2508174.}
+
+\bibitem[Gilmer et al. 2017]{gilmer2017}
+\abntrefinfo{Gilmer et al.}{GILMER et al.}{2017}
+{GILMER, J.; SCHOENHOLZ, S.~S.; RILEY, P.~F.; VINYALS, O.; DAHL, G.~E. Neural
+  message passing for quantum chemistry. In:  \textbf{Proceedings of the 34th
+  International Conference on Machine Learning (ICML)}. [S.l.: s.n.], 2017.
+  ArXiv:1704.01212.}
+
+\bibitem[Granger 1969]{granger1969}
+\abntrefinfo{Granger}{GRANGER}{1969}
+{GRANGER, C. W.~J. Investigating causal relations by econometric models and
+  cross-spectral methods.
+\textbf{Econometrica}, v.~37, n.~3, p. 424--438, 1969.}
+
+\bibitem[Koza 1992]{koza1992}
+\abntrefinfo{Koza}{KOZA}{1992}
+{KOZA, J.~R. \textbf{Genetic Programming: On the Programming of Computers by
+  Means of Natural Selection}. Cambridge, MA: MIT Press, 1992.}
+
+\bibitem[Ljung 1999]{ljung1999}
+\abntrefinfo{Ljung}{LJUNG}{1999}
+{LJUNG, L. \textbf{System Identification: Theory for the User}. 2. ed. Upper
+  Saddle River: Prentice Hall, 1999.}
+
+\bibitem[Luo et al. 2020]{luo2020}
+\abntrefinfo{Luo et al.}{LUO et al.}{2020}
+{LUO, D.; CHENG, W.; XU, D.; YU, W.; ZONG, B.; CHEN, H.; ZHANG, X.
+  Parameterized explainer for graph neural network. In:  \textbf{Advances in
+  Neural Information Processing Systems (NeurIPS)}. [S.l.: s.n.], 2020. v.~33.
+  ArXiv:2011.04573.}
+
+\bibitem[Maddison, Mnih e Teh 2017]{maddison2017}
+\abntrefinfo{Maddison, Mnih e Teh}{MADDISON; MNIH; TEH}{2017}
+{MADDISON, C.~J.; MNIH, A.; TEH, Y.~W. The concrete distribution: A continuous
+  relaxation of discrete random variables. In:  \textbf{International
+  Conference on Learning Representations (ICLR)}. [S.l.: s.n.], 2017.}
+
+\bibitem[Schmidt e Lipson 2009]{schmidt2009}
+\abntrefinfo{Schmidt e Lipson}{SCHMIDT; LIPSON}{2009}
+{SCHMIDT, M.; LIPSON, H. Distilling free-form natural laws from experimental
+  data.
+\textbf{Science}, v.~324, n.~5923, p. 81--85, 2009.}
+
+\bibitem[Seman et al. 2026]{seman2026}
+\abntrefinfo{Seman et al.}{SEMAN et al.}{2026}
+{SEMAN, L.~O.; STEFENON, S.~F.; YOW, K.-C.; COELHO, L. d.~S.; MARIANI, V.~C.
+  Fourier-enhanced sequence-to-sequence latent graph neural networks for
+  multi-node spatiotemporal forecasting in a hydroelectric reservoir.
+\textbf{Engineering Applications of Artificial Intelligence}, v.~167, n.~3,
+  2026.}
+
+\bibitem[Shapley 1953]{shapley1953}
+\abntrefinfo{Shapley}{SHAPLEY}{1953}
+{SHAPLEY, L.~S. A value for n-person games. In:  KUHN, H.~W.; TUCKER, A.~W.
+  (Ed.). \textbf{Contributions to the Theory of Games II}. Princeton: Princeton
+  University Press, 1953. p. 307--317.}
+
+\bibitem[Skogestad e Postlethwaite 2005]{skogestad2005}
+\abntrefinfo{Skogestad e Postlethwaite}{SKOGESTAD; POSTLETHWAITE}{2005}
+{SKOGESTAD, S.; POSTLETHWAITE, I. \textbf{Multivariable Feedback Control:
+  Analysis and Design}. 2. ed. Chichester: Wiley, 2005.}
+
+\bibitem[Tan, Soubki e Cranmer 2026]{tan2026}
+\abntrefinfo{Tan, Soubki e Cranmer}{TAN; SOUBKI; CRANMER}{2026}
+{TAN, E. S.~Z.; SOUBKI, A.; CRANMER, M. \textbf{SymTorch: Symbolic Distillation
+  of Neural Networks}. 2026.
+ArXiv preprint arXiv:2602.21307.}
+
+\bibitem[Tibshirani 1996]{tibshirani1996}
+\abntrefinfo{Tibshirani}{TIBSHIRANI}{1996}
+{TIBSHIRANI, R. Regression shrinkage and selection via the lasso.
+\textbf{Journal of the Royal Statistical Society: Series B}, v.~58, n.~1, p.
+  267--288, 1996.}
+
+\bibitem[Ying et al. 2019]{ying2019}
+\abntrefinfo{Ying et al.}{YING et al.}{2019}
+{YING, R.; BOURGEOIS, D.; YOU, J.; ZITNIK, M.; LESKOVEC, J. Gnnexplainer:
+  Generating explanations for graph neural networks. In:  \textbf{Advances in
+  Neural Information Processing Systems (NeurIPS)}. [S.l.: s.n.], 2019. v.~32.
+  ArXiv:1903.03894.}
+
+\bibitem[Yuan et al. 2021]{yuan2021}
+\abntrefinfo{Yuan et al.}{YUAN et al.}{2021}
+{YUAN, H.; YU, H.; WANG, J.; LI, K.; JI, S. On explainability of graph neural
+  networks via subgraph explorations. In:  \textbf{Proceedings of the 38th
+  International Conference on Machine Learning (ICML)}. [S.l.: s.n.], 2021.
+  ArXiv:2102.05152.}
+
+\end{thebibliography}
