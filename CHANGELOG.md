@@ -7,6 +7,32 @@ O formato é baseado no [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.
 ## [Unreleased]
 
 ### Added
+- `notebooks/eda/04_collection_models_eda.ipynb` — carrega os runs de um
+  experimento `collection_*` do MLflow como DataFrame
+  (`mlflow.search_runs`), para comparar R²/SMAPE/energia por banda entre
+  modelos sem abrir a UI run a run; `show_artifact` baixa e mostra um PNG
+  de artefato direto no notebook. Reutilizável para outros experimentos
+  com a mesma convenção de métricas — ver
+  `docs/changes/2026-10-09-eda-collection-models.md`.
+- Experimento MLflow `mimo_sys_collection_70_15_15`
+  (`notebooks/training/05_collection_models_v1.py` +
+  `collection_common.py`): run pai `collection_70_15_15` com uma child por
+  modelo (2 ARMAX + 5 redes), cada uma com métricas por saída e por banda
+  de frequência, plot temporal, plot espectral e mapa de attention; o run
+  pai concentra os heatmaps de resumo. Figuras como PNG (nova dependência
+  `kaleido` no grupo `plot`), porque a UI do MLflow não pré-visualiza HTML.
+  Registra que a attention do `Seq2SeqAttention` é praticamente uniforme
+  (entropia relativa 0,999) enquanto a do `Seq2SeqLatentGNN` concentra nos
+  lags recentes (0,954) — ver
+  `docs/changes/2026-10-09-collection-models-v1.md`.
+- Análise no domínio da frequência (real vs. predito) em
+  `notebooks/training/04_arquiteturas_vs_armax.ipynb`: espectro de amplitude
+  e MSE/SMAPE espectral por banda, com as bandas ancoradas no ciclo diário e
+  no harmônico de 12h de `docs/5_eda-series-temporais.md` §7. Mostra que as
+  redes capturam a banda diária mas perdem 30–94% da energia acima dela, e
+  que `nivel_res` erra por **injetar** energia inexistente — ver
+  `docs/changes/2026-10-09-analise-dominio-frequencia.md`. Nenhum modelo
+  retreinado.
 - `src/mimo_sys/explainers/equation/` e `src/mimo_sys/explainers/graph/`,
   operacionalizando as rotas A (destilação simbólica de `message_fn`/
   `update_fn` via PySR) e B (`edge_strength_frame`, com `PGExplainerTopology`
